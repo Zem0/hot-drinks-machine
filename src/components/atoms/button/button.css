@@ -1,0 +1,9 @@
+@import "../../../styles/theme.css";
+
+.custom-button {
+    background-color: var(--light-color);
+    border: none;
+    color: var(--dark-color);
+    cursor: pointer;
+    padding: 1rem;
+}
