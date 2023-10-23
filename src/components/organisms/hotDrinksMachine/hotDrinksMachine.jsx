@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import drinkRecipes from "../../../models/drinkRecipes";
 import Button from "../../atoms/button/button";
 import HotDrinkAnimation from "../../atoms/hotDrinkAnimation/hotDrinkAnimation";
-import "./hotDrinksMachine.css"
+import "./hotDrinksMachine.css";
 
 function HotDrinksMachine() {
     const [selectedDrink, setSelectedDrink] = useState("");
