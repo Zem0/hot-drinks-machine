@@ -20,14 +20,14 @@ function HotDrinksMachine() {
             <h1>Hot Drinks Machine</h1>
             <HotDrinkAnimation />
             <div>
-                <Button text="Lemon Tea" onClick={() => prepareDrink("Lemon Tea")} />
-                <Button text="Coffee" onClick={() => prepareDrink("Coffee")} />
-                <Button text="Hot Chocolate" onClick={() => prepareDrink("Hot Chocolate")} />
+                <Button tabindex="1" text="Lemon Tea" onClick={() => prepareDrink("Lemon Tea")} />
+                <Button tabindex="2" text="Coffee" onClick={() => prepareDrink("Coffee")} />
+                <Button tabindex="3" text="Hot Chocolate" onClick={() => prepareDrink("Hot Chocolate")} />
             </div>
             {selectedDrink && (
                 <div>
-                    <h2>Preparing {selectedDrink}</h2>
-                    <ul>
+                    <h2 aria-live="assertive">Preparing {selectedDrink}</h2>
+                    <ul aria-live="assertive">
                         {actions.map((action, index) => (
                             <li key={index}>{action}</li>
                         ))}

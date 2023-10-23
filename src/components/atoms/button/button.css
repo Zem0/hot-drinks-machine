@@ -6,4 +6,9 @@
     color: var(--dark-color);
     cursor: pointer;
     padding: 1rem;
+    &:focus-visible {
+        outline-color: var(--focus-color);
+        outline-style: solid;
+        outline-width: 2px;
+    }
 }
