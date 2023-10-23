@@ -1,5 +1,3 @@
-// drinkRecipes.js
-
 const drinkRecipes = {
     "Lemon Tea": [
         "Boiled water.",
